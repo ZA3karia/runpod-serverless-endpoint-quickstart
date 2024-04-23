@@ -17,11 +17,10 @@ RUN apt-get update && apt-get install -y \
     libgl1-mesa-glx \
     libglib2.0-0 \
     libsm6 \
-    libxrender1 \
-    libxext6
+    libxrender1
 
 # Expose the required port
-EXPOSE 30002
+EXPOSE 30002 
 
 # Set the command to run the application
 CMD [ "python", "-u", "/handler.py" ]
